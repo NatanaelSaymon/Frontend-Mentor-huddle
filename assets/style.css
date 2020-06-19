@@ -107,35 +107,70 @@ nav{
   }
 }
 
+/* === SECTION CONTEUDO === */
+section.conteudo{
+  padding: 100px 20px;
+}
 
 /* === TOGETHER === */
 
-/* .together{
+.together{
   max-width: 1200px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 400px;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
+  margin: 0px auto 40px;
+  padding: 30px 80px;
   box-shadow: 1px 3px 9px -2px #ccc;
   border-radius: 10px;
-  padding: 70px;
 }
 
-.together-into{
-  flex: 1 1 260px;
+.together-into h1{
+  margin-bottom: 20px;
 }
 
 .together-into p{
-  width: 450px;
-} */
+  color: #7c7c7c;
+  max-width: 450px;
+}
 
+@media(max-width: 768px){
+  .together{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
+  .together-into{
+    justify-self: center;
+    text-align: center;
+    margin-top: 20px;
+  }
 
-/* .together-img img{
-  height: 300px;
-} */
+  .together-img{
+    grid-row: 1;
+  }
+}
 
+@media(max-width: 475px){
+  .together{
+    padding: 30px 10px;
+  }
+}
 
+/* === FLOWING === */
+.flowing{
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  margin: 0px auto 40px;
+  padding: 30px 80px;
+  box-shadow: 1px 3px 9px -2px #ccc;
+  border-radius: 10px;
+}
 
+.flowing-into{
+  max-width: 450px;
+  justify-self: end;
+}
 
-/* === MOBILE === */
